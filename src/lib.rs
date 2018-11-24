@@ -11,12 +11,15 @@
 //! ```
 
 mod tests;
+mod translator;
 mod util;
 
 use std::borrow::Cow;
 use std::collections::HashMap;
 use std::fmt;
 use util::FilterableResult;
+
+pub use translator::Translator;
 
 #[derive(Debug, PartialEq)]
 pub struct ElementNode {
